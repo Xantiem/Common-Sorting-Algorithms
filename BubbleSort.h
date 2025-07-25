@@ -1,6 +1,3 @@
-#define SORT_DECENDING true
-#define SORT_ASCENDING false
-
 void bubble_sort(int *array, int arr_size, bool sort) {
     bool exchanged;
     int exchange_c;

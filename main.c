@@ -11,13 +11,16 @@ Mishra, A. D., & Garg, D. (2008). Selection of best sorting algorithm. Internati
 #include "InsertionSort.h"
 #include "BubbleSort.h"
 
+#define SORT_DECENDING true
+#define SORT_ASCENDING false
+
 int main() {
 
     int unsorted_array[] = {3, 5, 9, 2, 7, 6, 0, 8, 1, 4};
     int ele_c = sizeof(unsorted_array)/sizeof(int);
 
     //bubble_sort(unsorted_array, ele_c, SORT_ASCENDING);
-    insertion_sort(unsorted_array, ele_c);
+    //insertion_sort(unsorted_array, ele_c, SORT_ASCENDING);
 
     for (int i=0;i<ele_c;i++)
         printf("%d ", unsorted_array[i]);
