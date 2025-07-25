@@ -2,7 +2,6 @@
 Based on the work provided by:
 
 Mishra, A. D., & Garg, D. (2008). Selection of best sorting algorithm. International Journal of intelligent information Processing, 2(2), 363-368. 
-
 */
 
 #include <stdbool.h>
@@ -18,6 +17,7 @@ int main() {
     int ele_c = sizeof(unsorted_array)/sizeof(int);
 
     //bubble_sort(unsorted_array, ele_c, SORT_ASCENDING);
+    insertion_sort(unsorted_array, ele_c);
 
     for (int i=0;i<ele_c;i++)
         printf("%d ", unsorted_array[i]);
