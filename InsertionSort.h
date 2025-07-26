@@ -20,3 +20,4 @@ void insertion_sort(int *array, int arr_size, bool sort) {
         }
         array[prev_var+1] = var;
     }
+}

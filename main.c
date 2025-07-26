@@ -8,11 +8,7 @@ Mishra, A. D., & Garg, D. (2008). Selection of best sorting algorithm. Internati
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "InsertionSort.h"
-#include "BubbleSort.h"
-
-#define SORT_DECENDING true
-#define SORT_ASCENDING false
+#include "SortingAlgorithms.h"
 
 int main() {
 
