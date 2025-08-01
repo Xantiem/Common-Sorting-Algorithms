@@ -7,21 +7,23 @@ void bubble_sort(int *array, int arr_size, bool sort) {
 
         for (int j=0;j<arr_size-i-1;j++) {
 
-            if (sort == true) {
-                if (array[j] < array[j+1]) { /* > sort asc or < sort dec*/
-                    exchange_c = array[j];
-                    array[j] = array[j+1];
-                    array[j+1] = exchange_c;
-                    exchanged = true;
-                }
-            }
-            else {
-                if (array[j] > array[j+1]) { /* > sort asc or < sort dec*/
-                    exchange_c = array[j];
-                    array[j] = array[j+1];
-                    array[j+1] = exchange_c;
-                    exchanged = true;
-                }    
+            switch (sort) {
+                case SORT_DESCENDING:
+                    if (array[j] < array[j+1]) { /* > sort asc or < sort dec*/
+                        exchange_c = array[j];
+                        array[j] = array[j+1];
+                        array[j+1] = exchange_c;
+                        exchanged = true;
+                    }
+                    break;
+                case SORT_ASCENDING:
+                    if (array[j] > array[j+1]) { /* > sort asc or < sort dec*/
+                        exchange_c = array[j];
+                        array[j] = array[j+1];
+                        array[j+1] = exchange_c;
+                        exchanged = true;
+                    }
+                    break;
             }
         }
         if (exchanged==false) break;
