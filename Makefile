@@ -14,3 +14,6 @@ $(TARGET): $(BIN)
 
 clean:
 	rm -f $(TARGET)
+
+run:
+	./$(TARGET)
