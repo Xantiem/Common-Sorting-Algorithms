@@ -18,6 +18,7 @@ int main() {
     //bubble_sort(unsorted_array, ele_c, SORT_ASCENDING);
     //insertion_sort(unsorted_array, ele_c, SORT_ASCENDING);
     //selection_sort(unsorted_array, ele_c, SORT_ASCENDING);
+    heap_sort(unsorted_array, ele_c, SORT_ASCENDING);
 
     for (int i=0;i<ele_c;i++)
         printf("%d ", unsorted_array[i]);
